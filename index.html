@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="id"><head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/utilities.min.css; img-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8f6f1">
+<meta name="description" content="Jelajahi katalog kopi dan alat seduh Sela Kopi. Susun keranjang dan pesan melalui WhatsApp.">
+<title>Sela Kopi — Katalog Produk &amp; Profil Usaha UMKM</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/utilities.min.css" integrity="sha384-xflhxB2IPPxTDTPXKTTm2IAAa8Uze6D5mODSOe8yxSvxm15SaGLY5zGHzHO/3XhO" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
+</head><body id="beranda">
+<header><div class="wrap bar"><a class="brand" href="#beranda"><span class="bean" aria-hidden="true"></span>Sela Kopi<span class="dot">.</span></a><nav aria-label="Utama"><a href="#beranda">Beranda</a><a href="#katalog">Katalog</a><a href="#tentang">Tentang kami</a></nav><button id="open" class="basket"><span aria-hidden="true">▤</span> Keranjang <b id="count">0</b></button></div></header>
+<main>
+<section class="hero wrap"><div class="hero-copy"><p class="eyebrow">KEDAI &amp; SANGRAI KOPI</p><h1>Kopi lokal,<br><em>sepenuh hati.</em></h1><p>Dari biji pilihan hingga seduhan favorit, temukan teman untuk setiap jeda Anda.</p><a class="cta" href="#katalog">Jelajahi katalog <span aria-hidden="true">↘</span></a></div></section>
+<section class="wrap section" id="katalog"><p class="eyebrow">PILIHAN KEDAI</p><div class="heading"><h2>Katalog produk</h2><label class="search"><span aria-hidden="true">⌕</span><input type="search" id="query" maxlength="80" placeholder="Cari produk…" aria-label="Cari produk"></label></div><div class="filters" id="filters" aria-label="Kategori produk" role="group"></div><p class="sr-only" id="results" role="status"></p><div id="grid" class="grid-products"></div><noscript>Aktifkan JavaScript untuk melihat produk dan memesan.</noscript></section>
+<section class="about" id="tentang"><div class="wrap about-in"><div><p class="eyebrow">TENTANG KAMI</p><h2>Kenali Sela Kopi.</h2></div><p>Sela Kopi adalah kedai yang mempertemukan penikmat kopi dengan biji Nusantara. Di katalog ini Anda bisa memilih biji untuk diseduh di rumah, memesan minuman, atau melengkapi peralatan seduh. Ketersediaan dan pengiriman dikonfirmasi oleh kedai melalui WhatsApp.</p></div></section></main>
+<footer class="wrap">Sela Kopi. <a href="#beranda">Kembali ke atas ↑</a></footer>
+<dialog id="cart" aria-labelledby="cart-title"><div class="dialog-head"><h2 id="cart-title">Keranjang Anda</h2><button id="close" aria-label="Tutup keranjang">×</button></div><div id="lines"></div><div class="total"><strong>Subtotal</strong><strong id="sum"></strong></div><p>Ongkir dan ketersediaan dikonfirmasi oleh kedai.</p><p id="recipient"></p><a id="order" class="cta" target="_blank" rel="noopener noreferrer">Pesan via WhatsApp ↗</a></dialog>
+<div id="toast" role="status"></div></body></html>
